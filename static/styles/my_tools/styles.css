@@ -1,0 +1,103 @@
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style for the header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Style for navigation menu */
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease; /* Add transition effect */
+}
+
+/* Hover effect for navigation menu tabs */
+nav ul li a:hover {
+    color: #00cc66; /* Light green on hover */
+}
+
+/* Style for hero section */
+.hero {
+    text-align: center;
+    padding: 100px 0;
+    background-color: #f0f0f0;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* Style for featured tools */
+.featured-tools {
+    padding: 40px 0;
+    background-color: #fff;
+}
+
+.tool-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.tool {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+.tool img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Add more styles for other sections, such as content, about, contact, and footer */
+
+/* Style for footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-content ul {
+    list-style: none;
+    display: flex;
+}
+
+.footer-content ul li {
+    margin-right: 20px;
+}
+
+/* Style for social media icons */
+.social-icons {
+    display: flex;
+    gap: 10px;
+}

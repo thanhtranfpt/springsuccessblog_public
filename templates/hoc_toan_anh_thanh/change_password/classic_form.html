@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Bootstrap Example</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+      <style type="text/css">
+
+      .input-group-addon a
+      {
+         color:gray;
+         font-weight: bold;
+      }
+       
+      .form-control:focus
+      {
+         box-shadow: none;
+      }
+      .input-group-addon
+      {   
+          cursor: pointer;
+          text-align: center;
+          justify-content: center;
+          display: flex;
+          flex-direction: column;
+          padding: 5px 10px;
+          border: 1px solid lightgray;
+          border-left: none;
+          border-radius: 0px 5px 5px 0px;         
+      }
+      .error
+      {
+         color:red;
+         font-size: 14px;
+      }
+      </style>
+   </head>
+   <body>
+      <div class="container-fluid" style="display: flex; flex-direction: column; text-align: center; justify-content: center; width: 100%; height: 100vh; background-color: white;">
+         <div class="row justify-content-center" style=" padding: 20px;">
+            <div class="col-xl-3 col-lg-4 col-md-5 col-sm-7 shadow" style="background-color: whitesmoke; margin: 0px auto; padding:20px; min-height: 200px; border-radius: 10px;">
+               <span style="font-size: 18px; font-weight: bold; color: dodgerblue; display: inline-block; margin-bottom: 15px;">Change Login Password</span>
+               <form id="change_password" action="./change-password-controller.php" method="POST">
+                  
+                  <div class="form-group text-left">
+                     <label>Current Password <span style="color:red; font-weight: bold; font-size: 16px;">*</span></label>
+                      <div class="input-group ">
+                        <input class="form-control" type="password" id="currentPassword" name="currentPassword" autofocus>
+                        <div class="input-group-addon show_hide_password" style="">
+                          <a style="outline: none;" tabindex="-1" href=""><i class="fa fa-eye-slash" aria-hidden="true"></i></a>
+                        </div>
+                      </div>
+                      <span class="error" ></span>
+                  </div>
+
+                  <div class="form-group text-left">
+                     <label>New Password <span style="color:red; font-weight: bold; font-size: 16px;">*</span></label>
+                      <div class="input-group">
+                        <input class="form-control" type="password" id="newPassword" name="newPassword" onkeyup="enablePasswordField()">
+                        <div class="input-group-addon show_hide_password" style="">
+                          <a style="outline: none;" tabindex="-1" href=""><i class="fa fa-eye-slash" aria-hidden="true"></i></a>
+                        </div>
+                      </div>
+                      <span class="error" ></span>
+                  </div>
+                  <div class="form-group text-left">
+                     <label>Renter New Password <span style="color:red; font-weight: bold; font-size: 16px;">*</span></label>
+                      <div class="input-group ">
+                       <input class="form-control" type="password" id="renterNewPassword" name="renterNewPassword" onkeyup="matchPassword()"  disabled>
+                        <div class="input-group-addon show_hide_password" style="">
+                          <a style="outline: none;" tabindex="-1" href=""><i class="fa fa-eye-slash" aria-hidden="true"></i></a>
+                        </div>
+                      </div>
+                      <span class="error" ></span>
+                  </div>
+                      <span class="error invalid" ></span>
+
+                  <input type="hidden" id="loginType" name="loginType" value="<?php echo $loginType; ?">
+                  <input type="hidden" id="loginId" name="loginId" value="<?php echo $loginId; ?">
+                  <input type="button" class="btn btn-primary mt-4 mb-3" name="" value="Change Password" onclick="validateChangePassword()">
+               </form>
+            </div>
+         </div>
+      </div>
+
+<script type="text/javascript">
+  
+ function validateChangePassword()
+ {
+   $('.error').text('');
+
+   if($('#currentPassword').val() == '')
+   {
+     $('#currentPassword').parents('.input-group').siblings('.error').text('Current password is required.'); 
+   }   
+   else if($('#currentPassword').val().length > 50 )
+   {
+     $('#currentPassword').parents('.input-group').siblings('.error').text('Password can\'t be more than 50 characters.'); 
+   }   
+
+   if($('#newPassword').val() == '')
+   {
+     $('#newPassword').parents('.input-group').siblings('.error').text('New password is required.'); 
+   }   
+   else if($('#newPassword').val().length > 50 )
+   {
+     $('#newPassword').parents('.input-group').siblings('.error').text('Password can\'t be more than 50 characters.'); 
+   }   
+
+   if($('#renterNewPassword').val() == '' && $('#newPassword').val().length > 2 )
+   {
+     $('#renterNewPassword').parents('.input-group').siblings('.error').text('Matching password is required.'); 
+   }   
+   else if($('#renterNewPassword').val().length > 50 && $('#newPassword').val().length > 2)
+   {
+     $('#renterNewPassword').parents('.input-group').siblings('.error').text('Password can\'t be more than 50 characters.'); 
+   }   
+
+   if($('#renterNewPassword').val().length > 2 && $('#newPassword').val().length > 2 )
+   {
+         if($('#renterNewPassword').val() != $('#newPassword').val() )
+         {
+            $('#renterNewPassword').parents('.input-group').siblings('.error').text('Please enter a matching password.');
+         }
+   }  
+
+   if($('.error').length > 0 || $('#loginId').val() == '' || $('#loginId').val() == '')
+    {
+
+    }
+    else
+    {
+
+      $.ajax({
+            type: $('#change_password').attr('method'),
+            url: $('#change_password').attr('action'),
+            data: $('#change_password').serialize(),
+            success: function (data) {
+              
+              console.log(data);
+              var data = JSON.parse(data);
+              for(x in data)
+              {
+                if(data['valid'])
+                {
+                     $('#change_password').trigger('reset');
+                     $.confirm({
+                          title: 'Success!',
+                          content: 'Your Password has been change successfully',
+                          type: 'green',
+                          typeAnimated: true,
+                          buttons: {
+                              tryAgain: {
+                                  text: 'Okay',
+                                  btnClass: 'btn-green',
+                              }
+                          }
+                      });
+                }
+                else if(data['invalid'])
+                {
+                     $.confirm({
+                          title: 'Incorrect Password Error!',
+                          content: 'Please Enter correct password',
+                          type: 'red',
+                          typeAnimated: true,
+                          buttons: {
+                              tryAgain: {
+                                  text: 'Try again',
+                                  btnClass: 'btn-red',
+                              }
+                          }
+                      });
+                }
+                else 
+                {
+                  $('#' + x ).parents('.input-group').siblings('.error').text(data[x]); 
+                }
+             }
+                 
+            },
+            error: function (data) {
+            }
+        });      
+     
+    }  
+
+ } 
+
+function enablePasswordField()
+{  
+   if($('#newPassword').val().length > 2)
+      $('#renterNewPassword').prop('disabled', false);
+}
+
+function matchPassword()
+{
+   $('#renterNewPassword').parents('.input-group').siblings('.error').text('');
+
+   if($('#renterNewPassword').val().length > 2 && $('#newPassword').val().length > 2 )
+   {
+         if($('#renterNewPassword').val() != $('#newPassword').val() )
+         {
+            $('#renterNewPassword').parents('.input-group').siblings('.error').text('Please enter a matching password.');
+         }
+   }  
+}
+
+$(document).ready(function() {
+    $(".show_hide_password").on('click', function(event) {
+        event.preventDefault();
+        if($(this).siblings('input').attr("type") == "text"){
+            $(this).siblings('input').attr('type', 'password');
+            $(this).children('a').children('i').addClass( "fa-eye-slash" );
+            $(this).children('a').children('i').removeClass( "fa-eye" );
+        }else if($(this).siblings('input').attr("type") == "password"){
+            $(this).siblings('input').attr('type', 'text');
+            $(this).children('a').children('i').removeClass( "fa-eye-slash" );
+            $(this).children('a').children('i').addClass( "fa-eye" );
+        }
+    });
+});
+</script>
+
+   </body>
+</html>

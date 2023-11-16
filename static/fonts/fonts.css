@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'Tenorite Regular';
+  src: url('tenorite/n.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Tenorite Bold';
+  src: url('tenorite/b.ttf') format('truetype');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Tenorite Italic';
+  src: url('tenorite/i.ttf') format('truetype');
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Tenorite Bold Italic';
+  src: url('tenorite/bi.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}

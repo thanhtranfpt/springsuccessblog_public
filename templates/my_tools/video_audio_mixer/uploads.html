@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Video Audio Mixer</title>
+    <meta content="spring success blog, thanh tran fpt, tran xuan thanh" name="description">
+  <meta content="spring success blog, thanh tran fpt, tran xuan thanh, nhunggidepnhat, nam sinh dat diem tuyet doi bai luan, xuat sac gianh hoc bong toan phan dh fpt, hoc toan anh thanh, cung hoc voi anh thanh ve loc" name="keywords">
+
+  <!-- Icon -->
+  <link href="../static/logo/icon.png" rel="icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .input-container-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 50px;
+        }
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+        }
+        .loading-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 999;
+        }
+        .loading-text {
+            font-size: 20px;
+        }
+        .upload-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .file-container {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+        .input-container {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+        input[type="file"] {
+            margin-bottom: 10px;
+        }
+        input[type="number"] {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        .file-label {
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        .result-container {
+            text-align: center;
+            width: 60%;
+            margin-top: 20px; /* Add this line */
+        }
+        video {
+            max-width: 100%;
+        }
+        /* Style for the "Tải Video" link */
+        .download-button {
+            display: inline-block; /* Ensure the link behaves as a block */
+            background-color: #4caf50; /* Green color */
+            color: white;
+            padding: 10px 20px;
+            border-radius: 4px;
+            text-decoration: none; /* Remove underlines from the link */
+            text-align: center; /* Center the link content */
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .download-button:hover {
+            background-color: #45a049; /* Darker green color on hover */
+        }
+
+        @media (max-width: 600px) {
+            .file-container {
+                width: 100%;
+            }
+            .result-container {
+                width: 100%;
+        }
+        }
+    </style>
+    <script>
+        function showLoadingOverlay() {
+            document.getElementById('loading-overlay').style.display = 'flex';
+        }
+    </script>
+</head>
+<body>
+    <div class="input-container-wrapper {% if resultVideoUrl %}result-available{% endif %}">
+        <div class="container">
+            <div class="upload-form">
+                <h1>Tải Lên Tệp Video và Âm Thanh</h1>
+                <br>
+                <form action="/tools/video_audio_mixer" method="POST" enctype="multipart/form-data" onsubmit="showLoadingOverlay()">
+                    <div class="file-container">
+                        <label class="file-label" for="video">Chọn tệp video:</label>
+                        <input type="file" name="video" id="video" accept=".mp4, .avi, .mov" required>
+                    </div>
+                    <div class="file-container">
+                        <label class="file-label" for="audio">Chọn tệp audio:</label>
+                        <input type="file" name="audio" id="audio" accept=".mp3, .wav" required>
+                    </div>
+                    <div class="input-container">
+                        <label for="audio_late_seconds">Số giây tệp audio phát trễ sau:</label>
+                        <input type="number" name="audio_late_seconds" id="audio_late_seconds" step="1" min="0" required>
+                    </div>
+                    <div class="input-container">
+                        <label for="video_volumnx_percentage">Phần trăm giảm âm lượng tệp video còn:</label>
+                        <input type="number" name="video_volumnx_percentage" id="video_volumnx_percentage" step="1" min="0" max="100" required>
+                    </div>
+                    <br>
+                    <input type="submit" value="Tải Lên">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="container"> -->
+        <div class="result-container">
+            {% if resultVideoUrl %}
+            <br><br><br>
+            <h1 style="color: green;">Chúng tôi đã xử lý video cho bạn!</h1>
+            <br><br>
+            <video controls width="100%" height="auto">
+                <source src="{{ resultVideoUrl }}" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <br><br><br>
+            <a href="{{ resultVideoUrl }}" download class="download-button" style="margin-bottom: 20px;">Tải Video</a>
+            {% endif %}
+        </div>
+    <!-- </div> -->
+
+    <div id="loading-overlay" class="loading-overlay" style="display: none;">
+        <p class="loading-text">Vui lòng đợi...</p>
+    </div>
+</body>
+</html>

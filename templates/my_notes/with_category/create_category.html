@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add category</title>
+
+    <meta content="spring success blog, thanh tran fpt, tran xuan thanh" name="description">
+  <meta content="spring success blog, thanh tran fpt, tran xuan thanh, nhunggidepnhat, nam sinh dat diem tuyet doi bai luan, xuat sac gianh hoc bong toan phan dh fpt, hoc toan anh thanh, cung hoc voi anh thanh ve loc" name="keywords">
+
+  <!-- Icon -->
+  <link href="../../static/logo/icon.png" rel="icon">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            margin-top: 50px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #007bff;
+        }
+        label {
+            font-weight: bold;
+            color: #555;
+        }
+        input[type="text"],
+        select,
+        textarea {
+            width: 95%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            font-family: Arial, sans-serif; /* Apply Arial font style */
+        }
+        input[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        p {
+            text-align: center;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Add a new category</h1>
+        <form action="/notes/add-category" method="post">
+            <label for="catName">Category Name:</label>
+            <input type="text" id="catName" name="catName" required>
+            
+            <label for="catType">Category type:</label>
+            <input type="text" id="catType" name="catType">
+
+            <label for="catDesc">Category Description:</label>
+            <textarea id="catDesc" name="catDesc" rows="6"></textarea>
+            
+            <input type="submit" value="Add" style="margin-top: 20px;">
+        </form>
+
+        <!-- Result section -->
+        <div id="result-section" style="display: none; margin-top: 50px; color: #007bff; ">
+            <h2>Submission Status</h2>
+            <p id="result-message"></p>
+            <p id="result-catName"></p>
+        </div>
+
+    </div>
+
+    <!-- JavaScript to handle form submission and result display -->
+    <script>
+        const form = document.querySelector('form');
+        const resultSection = document.getElementById('result-section');
+        const resultMessage = document.getElementById('result-message');
+        const resultCatName = document.getElementById('result-catName')
+        
+        form.addEventListener('submit', async (event) => {
+            event.preventDefault();
+            
+            const formData = new FormData(form);
+            try {
+                const response = await fetch('/notes/add-category', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                const responseData = await response.json();  // Parse JSON response
+
+                resultMessage.textContent = responseData.message;
+                
+                if (responseData.status === '1') {
+                    // Successful response
+                    resultCatName.textContent = "Your new category is: " + responseData.catName;
+                    resultMessage.style.color = 'green';
+                    resultCatName.style.color = 'green';
+                } else {
+                    // Error response
+                    resultMessage.style.color = 'red';
+                    if (responseData.status === '-1') {
+                        setTimeout(function() {
+                            window.open(responseData.loginUrl, "_blank");
+                        }, 4000);
+                    }
+                }
+
+                resultSection.style.display = 'block'; // Display the result section
+
+            } catch (error) {
+                console.error('Network error:', error);
+            }
+        });
+
+    </script>
+
+</body>
+</html>

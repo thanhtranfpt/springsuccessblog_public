@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tra cứu tiến trình học tập - Học Toán anh Thành</title>
+    <meta content="spring success blog, thanh tran fpt, tran xuan thanh" name="description">
+  <meta content="spring success blog, thanh tran fpt, tran xuan thanh, nhunggidepnhat, nam sinh dat diem tuyet doi bai luan, xuat sac gianh hoc bong toan phan dh fpt, hoc toan anh thanh, cung hoc voi anh thanh ve loc" name="keywords">
+
+  <!-- Icon -->
+  <link href="../../static/logo/icon.png" rel="icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #3498db;
+        }
+
+        p {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        /* Add some spacing around the table */
+        table {
+            margin: 0 auto;
+            border-collapse: collapse;
+            width: 80%;
+            background-color: #fff;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #eaeaea; /*d9d9d9; f2f2f2*/;
+            text-align: center;
+        }
+
+        /* Allow text wrapping in the last column */
+        td:last-child {
+            white-space: normal;
+            word-break: break-all;
+            word-wrap: break-word;
+            white-space: pre-wrap; /* Preserve line breaks and wrap content */
+            word-break: break-word; /* Break words when needed */
+        }
+
+        /* Justify the content in the last column */
+        td:last-child {
+            text-align: left;
+        }
+
+        /* Center align cells in rows (excluding the last column) */
+        tr:not(:last-child) td:not(:last-child) {
+            text-align: center;
+        }
+
+        /* Italicize text in the last header cell */
+        th:last-child {
+            font-style: italic;
+        }
+
+        /* Center align cells in the last row */
+        tr:last-child td {
+            text-align: center;
+            font-weight: bold;
+        }
+
+        /* Style the logout button */
+        button {
+            background-color: #e74c3c;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #c0392b;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        select {
+            width: 95%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            margin-bottom: 15px;
+        }
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        #result {
+            margin-top: 20px;
+            /* color: #007bff; */
+        }
+
+        /* Table styles */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            padding: 8px;
+            border: 1px solid #ccc;
+        }
+        th:first-child {
+            background-color: #dcdcdc;  /* #f1f1f1 Gray background for the index (first column) */
+        }
+
+        /* Style columns 4 to 9 to fit content */
+        td:nth-child(n+4):nth-child(-n+10) {
+            width: 1%; /* Allow content-based width */
+            white-space: nowrap; /* Prevent wrapping */
+        }
+
+        /* Style header cells in columns 4 to 10 to fit content */
+        th:nth-child(n+4):nth-child(-n+10) {
+            width: 1%; /* Allow content-based width */
+            white-space: nowrap; /* Prevent wrapping */
+        }
+
+        /* Style the cell at the intersection of near last row and column 5 (from 1) */
+        tr:nth-last-child(2) td:nth-child(5) {
+            font-style: italic;
+            font-weight: bold;
+        }
+
+        /* Style the cell at the intersection of last row and column 5 (from 1) */
+        tr:nth-last-child(1) td:nth-child(5) {
+            font-style: italic;
+            font-weight: bold;
+        }
+
+        /* Apply background colors to alternate rows */
+        tr:nth-child(even) {
+            background-color: #f2f2f2; /* Light gray color for even rows */
+        }
+
+        tr:nth-child(odd) {
+            background-color: #ffffff; /* White color for odd rows */
+        }
+
+        /* Style the header row with a darker background color 
+        th {
+            background-color: #3498db; /* Dark blue color for header row */
+            color: #fff; /* White text color for header cells */
+        } */
+
+        /* Style the header row with a darker background color */
+        th {
+            background-color: #d9d9d9; /* Slightly darker gray color for header row */
+            color: #fff; /* White text color for header cells */
+        }
+
+
+        /* Mobile-specific styles */
+        @media (max-width: 600px) {
+            /* Adjust the font size for better readability on smaller screens */
+            h1 {
+                font-size: 24px;
+            }
+            p {
+                font-size: 16px;
+            }
+            /* Adjust the table width to fit smaller screens */
+            table {
+                width: 95%;
+            }
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    <script>
+        // Check login status and redirect if needed
+      {% if not login_status %}
+        // Redirect to the login page
+        window.location.href = "/hoc-toan-anh-thanh/login?redirectUrl=%2Fhoc-toan-anh-thanh%2Ftra-cuu-tien-trinh-hoc-tap";
+      {% endif %}
+    </script>
+
+    <h1>Hi, {{user}}!</h1>
+
+    {% if login_status == True %}
+        <p>You are logged in.</p>
+    {% else %}
+        <p>You are not logged in.</p>
+
+    {% endif %}
+
+    <!-- Add a logout button -->
+    <button onclick="logOut()">Log Out</button>
+
+    <!-- Your JavaScript code for logout -->
+    <script>
+        function logOut() {
+            window.location.href = '/hoc-toan-anh-thanh/log-out'
+        }
+    </script>
+
+    
+    <!-- TRA CỨU TIẾN TRÌNH HỌC TẬP -->
+    <br><br><br><br><br>
+    <h2>Tra cứu tiến trình học tập</h2>
+    <form action="/hoc-toan-anh-thanh/tra-cuu-tien-trinh-hoc-tap" method="post">
+        <br>
+        <label for="month_name"><i>Tháng học:</i></label>
+        <select id="month_name" name="month_name">
+            <option disabled selected>Chọn tháng</option>
+            <!-- JavaScript code will populate the options here -->
+        </select>
+        <br>
+        <input type="submit" value="Tra cứu">
+    </form>
+
+    <br><br>
+
+    <div id="result"></div>
+
+    <script>
+        // JavaScript code to populate the dropdown options
+        var currentDate = new Date();
+        var currentYear = currentDate.getFullYear();
+        var currentMonth = currentDate.getMonth() + 1; // Note: months are 0-indexed in JavaScript
+
+        var startYear = 2015;
+        var monthNames = [
+            "Tháng 01", "Tháng 02", "Tháng 03", "Tháng 04", "Tháng 05", "Tháng 06",
+            "Tháng 07", "Tháng 08", "Tháng 09", "Tháng 10", "Tháng 11", "Tháng 12"
+        ];
+
+        var dropdown = document.getElementById("month_name");
+
+        // Add the options starting from the current month/year
+        for (var year = currentYear; year >= startYear; year--) {
+            var startMonth = (year === currentYear) ? currentMonth : 12; // Start from the current month if the current year
+            for (var month = startMonth; month >= 1; month--) {
+                var option = document.createElement("option");
+                option.text = monthNames[month - 1] + "/" + year;
+                option.value = monthNames[month - 1] + "/" + year;
+                dropdown.add(option);
+            }
+        }
+
+        // JavaScript code to handle form submission and display the result
+        document.querySelector('form').addEventListener('submit', function (event) {
+            event.preventDefault();
+            const month_name = document.getElementById('month_name').value;
+            fetch('/hoc-toan-anh-thanh/tra-cuu-tien-trinh-hoc-tap', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded'
+                },
+                body: `month_name=${month_name}`
+            })
+            .then(response => response.text()) // Use response.text() for the entire HTML code instead of response.json()
+            .then(data => {
+                document.getElementById('result').innerHTML = data;
+            })
+            .catch(error => {
+                console.error('Lỗi:', error);
+            });
+        });
+
+
+    </script>
+
+    
+</body>
+</html>

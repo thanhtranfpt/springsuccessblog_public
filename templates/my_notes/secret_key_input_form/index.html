@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login to Notes - Spring Success blog</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'styles/my_notes/secret_key_input_form/styles.css') }}">
+
+    <!-- Icon -->
+    <link rel="icon" href = "{{ url_for('static', filename = 'logo/icon.png') }}">
+
+    <style>
+      #container {
+        font-family: Arial, Helvetica, sans-serif;
+        position: absolute;
+        top: 30%;
+        left: 30%;
+        /* transform: translate(-50%, -50%); */
+      }
+    </style>
+
+</head>
+
+<body>
+
+  <div id="container">
+
+    <div class="form__group field" id="secret-key-form">
+      <input type="input" class="form__field" placeholder="Secret key" name="secret_key" id='secret_key' required />
+      <label for="name" class="form__label">Enter Secret key</label>
+      <button class="form__button" id="button-submit">Submit</button>
+    </div>
+
+    <div id="result" style="margin-top: 50px;"></div>
+
+  </div>
+
+
+    <script>
+
+      document.getElementById('button-submit').addEventListener('click', function(event) {
+        var secret_key = document.getElementById('secret_key').value;
+
+        var message = {
+          'secret_key': secret_key
+        }
+
+        fetch("/notes/enter-secret-key", {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(message),
+        })
+        .then(function(response) {
+          return response.json();
+        })
+        
+        .then(function(data) {
+
+          document.getElementById('result').textContent = data['message'];
+
+          if (data['status_code'] === 1) {
+            document.getElementById('result').style.color = 'green';
+            window.location.href = "{{ redirectUrl }}";
+          }
+          else {
+            document.getElementById('result').style.color = 'red';
+          };
+          
+        })
+
+        .catch(function(error) {
+          console.error('ERROR: ', error);
+        });
+      });
+
+    </script>
+
+</body>
+</html>

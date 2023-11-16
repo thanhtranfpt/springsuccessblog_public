@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ page_name }}</title>
+    <meta content="spring success blog, thanh tran fpt, tran xuan thanh" name="description">
+    <meta content="spring success blog, thanh tran fpt, tran xuan thanh, nhunggidepnhat, nam sinh dat diem tuyet doi bai luan, xuat sac gianh hoc bong toan phan dh fpt, hoc toan anh thanh, cung hoc voi anh thanh ve loc" name="keywords">
+    
+    <!-- Icon -->
+    <link href="../../static/logo/icon.png" rel="icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #3498db;
+        }
+
+        p {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+
+        /* Style the logout button */
+        button {
+            background-color: #e74c3c;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #c0392b;
+        }
+
+
+        /* Mobile-specific styles */
+        @media (max-width: 600px) {
+            /* Adjust the font size for better readability on smaller screens */
+            h1 {
+                font-size: 24px;
+            }
+            p {
+                font-size: 16px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+     <!-- Check login status and redirect if needed -->
+    {% if not login_status %}
+    <p>Hello, {{ name }}!</p>
+    <p>Email: {{ email }}</p>
+    <p>You are not logged in.</p>
+    <script>
+        // Redirect to the login page
+        setTimeout(() => {
+            window.location.href = "{{ login_url }}";
+        }, 4000);
+    </script>
+    {% endif %}
+
+    <!------------------------ User Information ------------------------->
+    {% if login_status == True %}
+
+        <h1>Xin chào, {{user_name}}!</h1>
+        <p>You are logged in.</p>
+
+        <!-- Add a logout button -->
+        <div style="margin-top: 50px;"> </div>
+        <button onclick="logout()">Log Out</button>
+
+
+    {% else %}
+        
+    {% endif %}
+
+    
+    <!-- Your JavaScript code for logout -->
+    <script>
+        function logout() {
+            // Send a request to the /logout endpoint to delete the session
+            fetch("{{ logout_url }}")
+            .then(response => {
+                // Redirect to the homepage or any other desired page after logout
+                window.location.href = "{{ redirect_after_logout }}";
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        }
+    </script>
+    
+</body>
+</html>

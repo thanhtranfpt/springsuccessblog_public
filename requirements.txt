@@ -1,0 +1,12 @@
+flask
+flask-cors
+requests
+pandas
+numpy
+moviepy
+decorator==4.4.2
+unidecode
+PyYAML
+cachecontrol
+google_auth_oauthlib
+gunicorn

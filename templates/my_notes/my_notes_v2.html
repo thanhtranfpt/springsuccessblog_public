@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/my_notes/secret_key_input_form/styles.css') }}">
+  <title>{{ page_title }}</title>
+  <meta content="spring success blog, thanh tran fpt, tran xuan thanh" name="description">
+  <meta content="spring success blog, thanh tran fpt, tran xuan thanh, nhunggidepnhat, nam sinh dat diem tuyet doi bai luan, xuat sac gianh hoc bong toan phan dh fpt, hoc toan anh thanh, cung hoc voi anh thanh ve loc" name="keywords">
+
+  <!-- Icon -->
+  <link href="../static/logo/icon.png" rel="icon">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    .notebook {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      margin: 20px auto;
+      padding: 20px;
+      width: 80%;
+      max-width: 800px;
+    }
+    h1 {
+      font-size: 28px;
+      margin-top: 0;
+    }
+    p {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+    .note {
+      border-left: 2px solid #3498db;
+      margin: 15px 0;
+      padding-left: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="notebook">
+    <h1>{{ heading }}</h1>
+    <p>Welcome to my digital notebook template. Feel free to jot down your thoughts and ideas here.</p>
+
+    <div class="note">
+      <h2>Note 1</h2>
+      <p>This is the first note. Write your content here.</p>
+    </div>
+    <div class="note">
+      <h2>Note 2</h2>
+      <p>This is the second note. Feel free to add your content.</p>
+    </div>
+    <!-- Add more notes as needed -->
+    
+    {% for note in notes_list %}
+    <div class="note">
+      <h2><a href="/notes/view-note?noteID={{ note['id'] }}" target="_blank" style="color: inherit; text-decoration: none;">{{ note['title'] | safe }}</a></h2>
+      <p style="font-size: 90%; max-height: 15px; color: #2d74a1;"><a href="/notes/view-note?noteID={{ note['id'] }}" target="_blank" style="color: inherit; text-decoration: none;">» View note</a></p>
+
+      {% if note["visible"] == "public" %}
+      <p>{{ note["content"] | safe }}</p>
+
+      {% if note['custom_others'] != note['custom_others'] %}  {# This checks if it's NaN #}
+      {% else %}
+      {{ note['custom_others'] | safe }}
+      {% endif %}
+
+      {% elif note["visible"] == "private" %}
+      <div class="form__group field" id="secret-key">
+        <input type="input" class="form__field" placeholder="Secret key" name="secret_key_note{{ note['id'] }}" id="secret_key_note{{ note['id'] }}" required />
+        <label for="secret_key" class="form__label">Secret key</label>
+        <button class="form__button" id="button-send-secret_key_note{{ note['id'] }}">View Note</button>
+      </div>
+
+      <script>
+        document.getElementById("button-send-secret_key_note{{ note['id'] }}").addEventListener('click', function(event) {
+          var secret_key = document.getElementById("secret_key_note{{ note['id'] }}").value;
+          var message = {
+            'secret_key' : secret_key
+          }
+
+          fetch("/notes/show-secret-note?noteID={{ note['id'] }}", {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(message),
+          })
+          .then(function(response) {
+            return response.json();
+          })
+
+          .then(function(data) {
+            if (data["status_code"] === 1) {
+              document.getElementById("show-content-note{{ note['id'] }}").style.color = "";
+              document.getElementById("show-content-note{{ note['id'] }}").textContent = data["note_content"];
+              document.getElementById("show-custom_others-note{{ note['id'] }}").innerHTML = data["note_custom_others"];
+            }
+            else {
+              document.getElementById("show-content-note{{ note['id'] }}").innerHTML = data["message"];
+              document.getElementById("show-content-note{{ note['id'] }}").style.color = "red";
+            }
+          })
+          .catch(function(error) {
+            console.error('ERROR: ', error);
+          });
+        });
+      </script>
+      
+      <p id="show-content-note{{ note['id'] }}"></p>
+      <div id="show-custom_others-note{{ note['id'] }}"></div>
+
+      {% endif %}
+    </div>
+    {% endfor %}
+
+  </div>
+</body>
+</html>

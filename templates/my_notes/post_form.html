@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8">
+        <title>Post a new note - Spring Success Notes</title>
+        <script src="https://cdn.tiny.cloud/1/q9xdfvkagibfknebogo9rv13k88mhrwvkajgwxpmt75lt8r3/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f4f4f4;
+                margin: 0;
+                padding: 0;
+            }
+            .container {
+                max-width: 80%;
+                margin: 0 auto;
+                padding: 20px;
+                background-color: #fff;
+                box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+                border-radius: 5px;
+                margin-top: 50px;
+            }
+            h1 {
+                text-align: center;
+                margin-bottom: 20px;
+                color: #007bff;
+            }
+            label, .label {
+                font-weight: bold;
+                color: #555;
+            }
+            input[type="text"],
+            select, .select,
+            textarea {
+                width: 100%;
+                padding: 10px;
+                padding-right: 0;
+                margin: 5px 0;
+                border: 1px solid #ccc;
+                border-radius: 3px;
+                font-family: Arial, sans-serif; /* Apply Arial font style */
+                font-size: 20px;
+            }
+            input[type="submit"] {
+                background-color: #007bff;
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 3px;
+                cursor: pointer;
+            }
+            input[type="submit"]:hover {
+                background-color: #0056b3;
+            }
+            .form-footer {
+                text-align: right;
+                margin-top: 20px;
+            }
+            p {
+                text-align: center;
+                color: #777;
+            }
+            .add-category {
+                cursor: pointer;
+                color: #007bff;
+                margin-left: 10px;
+                margin-bottom: 10px;
+                text-align: right;
+            }
+            /* Styles for screens with a maximum width of 800px (typical for mobile devices) */
+            @media screen and (max-width: 900px) {
+                .container {
+                    max-width: 95%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Write your notes</h1>
+            <form action="/notes/post" method="post" id="notes_form">
+                <label for="title">Note Title:</label>
+                <input type="text" id="title" name="title" style="font-size: 22px; font-weight: bold;" required>
+                <br>
+                <label for="content">Note Content:</label>
+                <textarea id="content" name="content"></textarea>
+                <br>
+                <label for="custom_others">Others custom: <i>(if needed)</i></label>
+                <textarea id="custom_others" name="custom_others" rows="6" style="font-family: 'Courier New', Courier, monospace;"></textarea>
+                <br>
+                <label for="category">Category:</label>
+                <select id="category" name="category">
+                    <option value="ungraded">Chưa được phân loại</option>
+                    {% for category in categories_info %}
+                    <option value="{{ category['id'] }}">{{ category['name'] }}</option>
+                    {% endfor %}
+                </select>
+                <br>
+                <div class="add-category" onclick="addNewCategory()">+ Add New Category</div>
+                <div class="label" style="margin-bottom: 10px;">Select your preferred visibility:</div>
+                    <div style="margin-bottom: 5px;">
+                        <input type="radio" id="public" name="visible" value="public" checked>
+                        <label for="public" style="font-size: 20px; margin-bottom: 20px; color: black; font-weight: 500;">Public</label>
+                    </div>
+                    <div style="margin-bottom: 5px;">
+                        <input type="radio" id="private" name="visible" value="private">
+                        <label for="private" style="font-size: 20px; margin-bottom: 20px; color: black; font-weight: 500;">Private</label>
+                    </div>
+                <br>
+                <label for="tags">Tags:</label>
+                <input type="text" id="tags" name="tags">
+                <br>
+                <div class="form-footer">
+                    <input type="submit" value="Post">
+                </div>
+            </form>
+            <p id="noticed">Please make sure your notes follows our guidelines.</p>
+
+            <!-- Result Section -->
+            <div id="result-section" style="display: none; margin-top: 50px; color: #007bff;">
+                <h2>Submission Status</h2>
+                <p id="result-message"></p>
+            </div>
+        </div>
+
+        <script>
+            tinymce.init({
+                selector: '#content',
+                height: 500, // Điều chỉnh chiều cao theo ý muốn
+                plugins: 'ai tinycomments mentions anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount checklist mediaembed casechange export formatpainter pageembed permanentpen footnotes advtemplate advtable advcode editimage tableofcontents mergetags powerpaste tinymcespellchecker autocorrect a11ychecker typography inlinecss',
+                toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table mergetags | align lineheight | tinycomments | checklist numlist bullist indent outdent | emoticons charmap | removeformat',
+                tinycomments_mode: 'embedded',
+                tinycomments_author: 'Author name',
+                mergetags_list: [
+                { value: 'First.Name', title: 'First Name' },
+                { value: 'Email', title: 'Email' },
+                ],
+                ai_request: (request, respondWith) => respondWith.string(() => Promise.reject("See docs to implement AI Assistant")),
+                paste_as_text: false, // Cho phép dán định dạng
+            });
+
+
+            const resultSection = document.getElementById('result-section');
+            const resultMessage = document.getElementById('result-message');
+            const noticed = document.getElementById('noticed');
+
+
+            document.getElementById('notes_form').addEventListener('submit', function(event) {
+                event.preventDefault();
+
+                const content = tinymce.get('content').getContent();
+
+                var title = document.getElementById('title').value;
+                var custom_others = document.getElementById('custom_others').value;
+                var category = document.getElementById('category').value;
+                var visible = getSelectedVisible();
+                var tags = document.getElementById('tags').value;
+
+                var message = {
+                    'title': title,
+                    'content': content,
+                    'custom_others': custom_others,
+                    'category': category,
+                    'visible': visible,
+                    'tags': tags
+                }
+
+                // Send a POST request to the server using the Fetch API
+                fetch('/notes/post', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(message),
+                })
+
+                .then(function(response) {
+                    return response.json();
+                })
+                .then(function(data) {
+                    // Process the response from the server
+                    if (data['status_code'] === 1) {
+                        // Successful response
+                        resultMessage.textContent = 'Your notes were successfully posted!';
+                        resultMessage.style.color = 'green';
+                        noticed.textContent = data['message'];
+                        noticed.style.color = 'green';
+                    }
+                    else {
+                        // Error response
+                        resultMessage.textContent = 'There was an error posting your notes. Please try again.';
+                        resultMessage.style.color = 'red';
+                        noticed.textContent = data['message'];
+                        noticed.style.color = 'red';
+
+                        if (data['status_code'] === -1) {
+                            setTimeout(function() {
+                                window.open(data['loginUrl'], "_blank");
+                            }, 4000);
+                        }
+                    }
+
+                    resultSection.style.display = 'block'; // Display the result section
+
+
+                })
+                .catch(function(error) {
+                    console.error('ERROR: ', error);
+                });
+            })
+
+
+
+            // Retrieve the selected value from a set of radio buttons:
+
+            function getSelectedVisible() {
+            var selectedVisible;
+            var visibleOptions = document.getElementsByName("visible");
+
+            for (var i = 0; i < visibleOptions.length; i++) {
+                if (visibleOptions[i].checked) {
+                    selectedVisible = visibleOptions[i].value;
+                    break; // Exit the loop when a checked option is found
+                }
+            }
+
+            return selectedVisible; // Return the selected visible
+
+        }
+
+
+        function addNewCategory() {
+            window.open("/notes/add-category", "_blank");
+        }
+
+        </script>
+    </body>
+</html>

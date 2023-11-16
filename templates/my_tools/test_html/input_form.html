@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test HTML</title>
+    <meta content="spring success blog, thanh tran fpt, tran xuan thanh" name="description">
+  <meta content="spring success blog, thanh tran fpt, tran xuan thanh, nhunggidepnhat, nam sinh dat diem tuyet doi bai luan, xuat sac gianh hoc bong toan phan dh fpt, hoc toan anh thanh, cung hoc voi anh thanh ve loc" name="keywords">
+
+  <!-- Icon -->
+  <link href="../static/logo/icon.png" rel="icon">
+
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        
+        .form-container {
+            width: 80%;
+            max-width: 500px;
+            padding: 20px;
+            background-color: #f5f5f5;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .form-label {
+            font-weight: bold;
+        }
+
+        .form-input {
+            margin-top: 5px;
+            padding: 8px;
+            width: 95%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-input {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            transition: box-shadow 0.3s, border-color 0.3s;
+            outline: none;
+        }
+
+        .form-input:focus {
+            border-color: #add8e6; /* Light blue border color */
+            box-shadow: 0 0 8px rgba(0, 123, 255, 0.5); /* Light blue box shadow */
+        }
+
+        .form-button {
+            margin-top: 15px;
+            padding: 8px 16px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        .form-button:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+        
+        h1 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+    </style>
+    
+
+</head>
+<body>
+    {% if not content %}
+    <div class="form-container">
+        <h1>Test your HTML code</h1>
+        <br>
+            <form method="post" action="/tools/test_html">
+                <label for="docs_link" class="form-label" style="font-style: italic;">Enter Docs link:</label>
+                <input type="text" id="docs_link" name="docs_link" class="form-input">
+                <br>
+                <br>
+                <button type="submit" class="form-button">Submit</button>
+            </form>
+    </div>
+    {% endif %}
+    
+    {% if content %}
+    <div id='result' class="reset-styles"></div>
+
+    <script>
+        // Assuming 'content' is a Python string containing the HTML code
+        var content = `{{ content|safe }}`;
+        document.getElementById('result').innerHTML = content;
+    </script>
+    {% endif %}
+</body>
+</html>

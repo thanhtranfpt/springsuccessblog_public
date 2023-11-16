@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Account - Học Toán anh Thành</title>
+    <meta content="spring success blog, thanh tran fpt, tran xuan thanh" name="description">
+    <meta content="spring success blog, thanh tran fpt, tran xuan thanh, nhunggidepnhat, nam sinh dat diem tuyet doi bai luan, xuat sac gianh hoc bong toan phan dh fpt, hoc toan anh thanh, cung hoc voi anh thanh ve loc" name="keywords">
+
+    <!-- Icon -->
+    <link href="../../static/logo/icon.png" rel="icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #3498db;
+        }
+
+        p {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+
+        /* Style the logout button */
+        button {
+            background-color: #e74c3c;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #c0392b;
+        }
+
+
+        /* Mobile-specific styles */
+        @media (max-width: 600px) {
+            /* Adjust the font size for better readability on smaller screens */
+            h1 {
+                font-size: 24px;
+            }
+            p {
+                font-size: 16px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <script>
+        // Check login status and redirect if needed
+      {% if not login_status %}
+        // Redirect to the login page
+        window.location.href = "/hoc-toan-anh-thanh/login?redirectUrl=%2Fhoc-toan-anh-thanh%2Fuser-account";
+      {% endif %}
+    </script>
+
+
+    <!------------------------ User Information ------------------------->
+    {% if login_status == True %}
+
+        <h1>Xin chào, {{user}}!</h1>
+        <p>You are logged in.</p>
+
+        <!-- Add a logout button -->
+        <div style="margin-top: 50px;"> </div>
+        <button onclick="logOut()">Log Out</button>
+
+        <div style="margin-top: 100px;">
+            <a href="/hoc-toan-anh-thanh/change-password" target="_blank">Change password</a>
+        </div>
+
+
+    {% else %}
+        <p>You are not logged in.</p>
+    {% endif %}
+
+    <script>
+        function logOut() {
+            window.location.href = '/hoc-toan-anh-thanh/log-out'
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit category - Spring Success Notes</title>
+
+    <meta content="spring success blog, thanh tran fpt, tran xuan thanh" name="description">
+    <meta content="spring success blog, thanh tran fpt, tran xuan thanh, nhunggidepnhat, nam sinh dat diem tuyet doi bai luan, xuat sac gianh hoc bong toan phan dh fpt, hoc toan anh thanh, cung hoc voi anh thanh ve loc" name="keywords">
+
+  <!-- Icon -->
+  <link href="../../static/logo/icon.png" rel="icon">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            margin-top: 50px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #007bff;
+        }
+        label {
+            font-weight: bold;
+            color: #555;
+        }
+        input[type="text"],
+        select,
+        textarea {
+            width: 95%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            font-family: Arial, sans-serif; /* Apply Arial font style */
+        }
+        input[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        p {
+            text-align: center;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Edit category</h1>
+        <form action="/notes/edit-category" method="post">
+            <label for="category_id">Choose a category to edit:</label>
+            <select id="category_id" name="category_id" required>
+                {% for category in categories_list %}
+                <option value="{{ category['id'] }}">{{ category['name'] }}</option>
+                {% endfor %}
+            </select>
+
+            <label for="new_category_name">New name:</label>
+            <input type="text" id="new_category_name" name="new_category_name" required>
+            
+            <label for="new_category_description">Edit Category Description:</label>
+            <textarea id="new_category_description" name="new_category_description" rows="6">{% if NUM_CATEGORY == 1 %}{{ categories_list[0]['description'] }}{% endif %}</textarea>
+            
+            <input type="submit" value="Submit" style="margin-top: 20px;">
+        </form>
+
+        <!-- Result section -->
+        <div id="result-section" style="display: none; margin-top: 50px; color: #007bff; ">
+            <h2>Submission Status</h2>
+            <p id="result-message"></p>
+        </div>
+
+    </div>
+
+    <!-- JavaScript to handle form submission and result display -->
+    <script>
+        const form = document.querySelector('form');
+        const resultSection = document.getElementById('result-section');
+        const resultMessage = document.getElementById('result-message');
+        
+        form.addEventListener('submit', async (event) => {
+            event.preventDefault();
+            
+            const formData = new FormData(form);
+            try {
+                const response = await fetch('/notes/edit-category', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                const responseData = await response.json();  // Parse JSON response
+
+                resultMessage.textContent = responseData.message;
+                
+                if (responseData.status === 1) {
+                    // Successful response
+                    resultMessage.style.color = 'green';
+                } else {
+                    // Error response
+                    resultMessage.style.color = 'red';
+
+                    if (responseData.status === 2) {
+                        setTimeout(function() {
+                            window.open(responseData.login_url, "_blank");
+                        }, 4000);
+                    }
+                }
+
+                resultSection.style.display = 'block'; // Display the result section
+
+            } catch (error) {
+                console.error('Network error:', error);
+            }
+        });
+
+    </script>
+
+</body>
+</html>

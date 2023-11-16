@@ -1,0 +1,805 @@
+
+                                <div class="col-md-6 mb-4 portfolio-item first">
+                                        <div class="position-relative overflow-hidden mb-2">
+                                            <img class="img-fluid w-100" src="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/chil/IMG_20221214_103034_hdr.jpg" alt="">
+                                            <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                                                <a href="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/chil/IMG_20221214_103034_hdr.jpg" data-lightbox="portfolio">
+                                                    <i class="fa fa-4x fa-plus text-white"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                </div>
+    
+
+                                <div class="col-md-6 mb-4 portfolio-item second">
+                                    <div class="position-relative overflow-hidden mb-2">
+                                        <img class="img-fluid w-100" src="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/uni/0021.jpg" alt="">
+                                        <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                                            <a href="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/uni/0021.jpg" data-lightbox="portfolio">
+                                                <i class="fa fa-4x fa-plus text-white"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+ <!-- END ONE LINE-->
+                                <div class="col-md-6 mb-4 portfolio-item first">
+                                        <div class="position-relative overflow-hidden mb-2">
+                                            <img class="img-fluid w-100" src="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/chil/IMG_20221214_103042_hdr.jpg" alt="">
+                                            <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                                                <a href="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/chil/IMG_20221214_103042_hdr.jpg" data-lightbox="portfolio">
+                                                    <i class="fa fa-4x fa-plus text-white"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                </div>
+    
+
+                                <div class="col-md-6 mb-4 portfolio-item second">
+                                    <div class="position-relative overflow-hidden mb-2">
+                                        <img class="img-fluid w-100" src="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/uni/0024.jpg" alt="">
+                                        <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                                            <a href="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/uni/0024.jpg" data-lightbox="portfolio">
+                                                <i class="fa fa-4x fa-plus text-white"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+ <!-- END ONE LINE-->
+                                <div class="col-md-6 mb-4 portfolio-item first">
+                                        <div class="position-relative overflow-hidden mb-2">
+                                            <img class="img-fluid w-100" src="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/chil/IMG_20221214_103050.jpg" alt="">
+                                            <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                                                <a href="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/chil/IMG_20221214_103050.jpg" data-lightbox="portfolio">
+                                                    <i class="fa fa-4x fa-plus text-white"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                </div>
+    
+
+                                <div class="col-md-6 mb-4 portfolio-item second">
+                                    <div class="position-relative overflow-hidden mb-2">
+                                        <img class="img-fluid w-100" src="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/uni/0051.jpg" alt="">
+                                        <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                                            <a href="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/uni/0051.jpg" data-lightbox="portfolio">
+                                                <i class="fa fa-4x fa-plus text-white"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+ <!-- END ONE LINE-->
+                                <div class="col-md-6 mb-4 portfolio-item first">
+                                        <div class="position-relative overflow-hidden mb-2">
+                                            <img class="img-fluid w-100" src="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/chil/IMG_20221214_103058.jpg" alt="">
+                                            <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                                                <a href="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/chil/IMG_20221214_103058.jpg" data-lightbox="portfolio">
+                                                    <i class="fa fa-4x fa-plus text-white"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                </div>
+    
+
+                                <div class="col-md-6 mb-4 portfolio-item second">
+                                    <div class="position-relative overflow-hidden mb-2">
+                                        <img class="img-fluid w-100" src="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/uni/0058.jpg" alt="">
+                                        <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                                            <a href="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/uni/0058.jpg" data-lightbox="portfolio">
+                                                <i class="fa fa-4x fa-plus text-white"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+ <!-- END ONE LINE-->
+                                <div class="col-md-6 mb-4 portfolio-item first">
+                                        <div class="position-relative overflow-hidden mb-2">
+                                            <img class="img-fluid w-100" src="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/chil/IMG_20221214_103115.jpg" alt="">
+                                            <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                                                <a href="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/chil/IMG_20221214_103115.jpg" data-lightbox="portfolio">
+                                                    <i class="fa fa-4x fa-plus text-white"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                </div>
+    
+
+                                <div class="col-md-6 mb-4 portfolio-item second">
+                                    <div class="position-relative overflow-hidden mb-2">
+                                        <img class="img-fluid w-100" src="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/uni/0059.jpg" alt="">
+                                        <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                                            <a href="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/uni/0059.jpg" data-lightbox="portfolio">
+                                                <i class="fa fa-4x fa-plus text-white"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+ <!-- END ONE LINE-->
+                                <div class="col-md-6 mb-4 portfolio-item first">
+                                        <div class="position-relative overflow-hidden mb-2">
+                                            <img class="img-fluid w-100" src="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/chil/IMG_20221214_103120.jpg" alt="">
+                                            <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                                                <a href="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/chil/IMG_20221214_103120.jpg" data-lightbox="portfolio">
+                                                    <i class="fa fa-4x fa-plus text-white"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                </div>
+    
+
+                                <div class="col-md-6 mb-4 portfolio-item second">
+                                    <div class="position-relative overflow-hidden mb-2">
+                                        <img class="img-fluid w-100" src="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/uni/Convolutional Neural Networks.jpg" alt="">
+                                        <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                                            <a href="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/uni/Convolutional Neural Networks.jpg" data-lightbox="portfolio">
+                                                <i class="fa fa-4x fa-plus text-white"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+ <!-- END ONE LINE-->
+                                <div class="col-md-6 mb-4 portfolio-item first">
+                                        <div class="position-relative overflow-hidden mb-2">
+                                            <img class="img-fluid w-100" src="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/chil/IMG_20221214_103146.jpg" alt="">
+                                            <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                                                <a href="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/chil/IMG_20221214_103146.jpg" data-lightbox="portfolio">
+                                                    <i class="fa fa-4x fa-plus text-white"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                </div>
+    
+
+                                <div class="col-md-6 mb-4 portfolio-item second">
+                                    <div class="position-relative overflow-hidden mb-2">
+                                        <img class="img-fluid w-100" src="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/uni/Deep Learning.jpg" alt="">
+                                        <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                                            <a href="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/uni/Deep Learning.jpg" data-lightbox="portfolio">
+                                                <i class="fa fa-4x fa-plus text-white"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+ <!-- END ONE LINE-->
+                                <div class="col-md-6 mb-4 portfolio-item first">
+                                        <div class="position-relative overflow-hidden mb-2">
+                                            <img class="img-fluid w-100" src="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/chil/IMG_20221214_103202.jpg" alt="">
+                                            <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                                                <a href="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/chil/IMG_20221214_103202.jpg" data-lightbox="portfolio">
+                                                    <i class="fa fa-4x fa-plus text-white"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                </div>
+    
+
+                                <div class="col-md-6 mb-4 portfolio-item second">
+                                    <div class="position-relative overflow-hidden mb-2">
+                                        <img class="img-fluid w-100" src="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/uni/Fashion Classification with Deep Learning for Beginners.jpg" alt="">
+                                        <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                                            <a href="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/uni/Fashion Classification with Deep Learning for Beginners.jpg" data-lightbox="portfolio">
+                                                <i class="fa fa-4x fa-plus text-white"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+ <!-- END ONE LINE-->
+                                <div class="col-md-6 mb-4 portfolio-item first">
+                                        <div class="position-relative overflow-hidden mb-2">
+                                            <img class="img-fluid w-100" src="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/chil/IMG_20221214_103240.jpg" alt="">
+                                            <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                                                <a href="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/chil/IMG_20221214_103240.jpg" data-lightbox="portfolio">
+                                                    <i class="fa fa-4x fa-plus text-white"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                </div>
+    
+
+                                <div class="col-md-6 mb-4 portfolio-item second">
+                                    <div class="position-relative overflow-hidden mb-2">
+                                        <img class="img-fluid w-100" src="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/uni/FB_IMG_1680367200529.jpg" alt="">
+                                        <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                                            <a href="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/uni/FB_IMG_1680367200529.jpg" data-lightbox="portfolio">
+                                                <i class="fa fa-4x fa-plus text-white"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+ <!-- END ONE LINE-->
+                                <div class="col-md-6 mb-4 portfolio-item first">
+                                        <div class="position-relative overflow-hidden mb-2">
+                                            <img class="img-fluid w-100" src="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/chil/IMG_20221214_103246_hdr.jpg" alt="">
+                                            <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                                                <a href="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/chil/IMG_20221214_103246_hdr.jpg" data-lightbox="portfolio">
+                                                    <i class="fa fa-4x fa-plus text-white"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                </div>
+    
+
+                                <div class="col-md-6 mb-4 portfolio-item second">
+                                    <div class="position-relative overflow-hidden mb-2">
+                                        <img class="img-fluid w-100" src="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/uni/IMG_20220804_213118_hdr~2.jpg" alt="">
+                                        <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                                            <a href="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/uni/IMG_20220804_213118_hdr~2.jpg" data-lightbox="portfolio">
+                                                <i class="fa fa-4x fa-plus text-white"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+ <!-- END ONE LINE-->
+                                <div class="col-md-6 mb-4 portfolio-item first">
+                                        <div class="position-relative overflow-hidden mb-2">
+                                            <img class="img-fluid w-100" src="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/chil/IMG_20221214_103249.jpg" alt="">
+                                            <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                                                <a href="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/chil/IMG_20221214_103249.jpg" data-lightbox="portfolio">
+                                                    <i class="fa fa-4x fa-plus text-white"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                </div>
+    
+
+                                <div class="col-md-6 mb-4 portfolio-item second">
+                                    <div class="position-relative overflow-hidden mb-2">
+                                        <img class="img-fluid w-100" src="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/uni/IMG_20221214_103901~3.jpg" alt="">
+                                        <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                                            <a href="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/uni/IMG_20221214_103901~3.jpg" data-lightbox="portfolio">
+                                                <i class="fa fa-4x fa-plus text-white"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+ <!-- END ONE LINE-->
+                                <div class="col-md-6 mb-4 portfolio-item first">
+                                        <div class="position-relative overflow-hidden mb-2">
+                                            <img class="img-fluid w-100" src="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/chil/IMG_20221214_103253.jpg" alt="">
+                                            <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                                                <a href="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/chil/IMG_20221214_103253.jpg" data-lightbox="portfolio">
+                                                    <i class="fa fa-4x fa-plus text-white"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                </div>
+    
+
+                                <div class="col-md-6 mb-4 portfolio-item second">
+                                    <div class="position-relative overflow-hidden mb-2">
+                                        <img class="img-fluid w-100" src="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/uni/IMG_20221214_103939.jpg" alt="">
+                                        <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                                            <a href="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/uni/IMG_20221214_103939.jpg" data-lightbox="portfolio">
+                                                <i class="fa fa-4x fa-plus text-white"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+ <!-- END ONE LINE-->
+                                <div class="col-md-6 mb-4 portfolio-item first">
+                                        <div class="position-relative overflow-hidden mb-2">
+                                            <img class="img-fluid w-100" src="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/chil/IMG_20221214_103300_hdr.jpg" alt="">
+                                            <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                                                <a href="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/chil/IMG_20221214_103300_hdr.jpg" data-lightbox="portfolio">
+                                                    <i class="fa fa-4x fa-plus text-white"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                </div>
+    
+
+                                <div class="col-md-6 mb-4 portfolio-item second">
+                                    <div class="position-relative overflow-hidden mb-2">
+                                        <img class="img-fluid w-100" src="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/uni/IMG_20230323_164158.jpg" alt="">
+                                        <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                                            <a href="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/uni/IMG_20230323_164158.jpg" data-lightbox="portfolio">
+                                                <i class="fa fa-4x fa-plus text-white"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+ <!-- END ONE LINE-->
+                                <div class="col-md-6 mb-4 portfolio-item first">
+                                        <div class="position-relative overflow-hidden mb-2">
+                                            <img class="img-fluid w-100" src="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/chil/IMG_20221214_103304.jpg" alt="">
+                                            <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                                                <a href="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/chil/IMG_20221214_103304.jpg" data-lightbox="portfolio">
+                                                    <i class="fa fa-4x fa-plus text-white"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                </div>
+    
+
+                                <div class="col-md-6 mb-4 portfolio-item second">
+                                    <div class="position-relative overflow-hidden mb-2">
+                                        <img class="img-fluid w-100" src="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/uni/IMG_20230323_164500~3.jpg" alt="">
+                                        <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                                            <a href="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/uni/IMG_20230323_164500~3.jpg" data-lightbox="portfolio">
+                                                <i class="fa fa-4x fa-plus text-white"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+ <!-- END ONE LINE-->
+                                <div class="col-md-6 mb-4 portfolio-item first">
+                                        <div class="position-relative overflow-hidden mb-2">
+                                            <img class="img-fluid w-100" src="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/chil/IMG_20221214_103313.jpg" alt="">
+                                            <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                                                <a href="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/chil/IMG_20221214_103313.jpg" data-lightbox="portfolio">
+                                                    <i class="fa fa-4x fa-plus text-white"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                </div>
+    
+
+                                <div class="col-md-6 mb-4 portfolio-item second">
+                                    <div class="position-relative overflow-hidden mb-2">
+                                        <img class="img-fluid w-100" src="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/uni/IMG_20230331_143251~3.jpg" alt="">
+                                        <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                                            <a href="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/uni/IMG_20230331_143251~3.jpg" data-lightbox="portfolio">
+                                                <i class="fa fa-4x fa-plus text-white"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+ <!-- END ONE LINE-->
+                                <div class="col-md-6 mb-4 portfolio-item first">
+                                        <div class="position-relative overflow-hidden mb-2">
+                                            <img class="img-fluid w-100" src="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/chil/IMG_20221214_103329_hdr.jpg" alt="">
+                                            <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                                                <a href="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/chil/IMG_20221214_103329_hdr.jpg" data-lightbox="portfolio">
+                                                    <i class="fa fa-4x fa-plus text-white"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                </div>
+    
+
+                                <div class="col-md-6 mb-4 portfolio-item second">
+                                    <div class="position-relative overflow-hidden mb-2">
+                                        <img class="img-fluid w-100" src="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/uni/IMG_20230401_232417.jpg" alt="">
+                                        <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                                            <a href="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/uni/IMG_20230401_232417.jpg" data-lightbox="portfolio">
+                                                <i class="fa fa-4x fa-plus text-white"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+ <!-- END ONE LINE-->
+                                <div class="col-md-6 mb-4 portfolio-item first">
+                                        <div class="position-relative overflow-hidden mb-2">
+                                            <img class="img-fluid w-100" src="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/chil/IMG_20221214_103332.jpg" alt="">
+                                            <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                                                <a href="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/chil/IMG_20221214_103332.jpg" data-lightbox="portfolio">
+                                                    <i class="fa fa-4x fa-plus text-white"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                </div>
+    
+
+                                <div class="col-md-6 mb-4 portfolio-item second">
+                                    <div class="position-relative overflow-hidden mb-2">
+                                        <img class="img-fluid w-100" src="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/uni/IMG_20230401_232458.jpg" alt="">
+                                        <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                                            <a href="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/uni/IMG_20230401_232458.jpg" data-lightbox="portfolio">
+                                                <i class="fa fa-4x fa-plus text-white"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+ <!-- END ONE LINE-->
+                                <div class="col-md-6 mb-4 portfolio-item first">
+                                        <div class="position-relative overflow-hidden mb-2">
+                                            <img class="img-fluid w-100" src="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/chil/IMG_20221214_103334.jpg" alt="">
+                                            <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                                                <a href="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/chil/IMG_20221214_103334.jpg" data-lightbox="portfolio">
+                                                    <i class="fa fa-4x fa-plus text-white"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                </div>
+    
+
+                                <div class="col-md-6 mb-4 portfolio-item second">
+                                    <div class="position-relative overflow-hidden mb-2">
+                                        <img class="img-fluid w-100" src="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/uni/IMG_20230710_123847.jpg" alt="">
+                                        <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                                            <a href="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/uni/IMG_20230710_123847.jpg" data-lightbox="portfolio">
+                                                <i class="fa fa-4x fa-plus text-white"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+ <!-- END ONE LINE-->
+                                <div class="col-md-6 mb-4 portfolio-item first">
+                                        <div class="position-relative overflow-hidden mb-2">
+                                            <img class="img-fluid w-100" src="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/chil/IMG_20221214_103337.jpg" alt="">
+                                            <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                                                <a href="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/chil/IMG_20221214_103337.jpg" data-lightbox="portfolio">
+                                                    <i class="fa fa-4x fa-plus text-white"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                </div>
+    
+
+                                <div class="col-md-6 mb-4 portfolio-item second">
+                                    <div class="position-relative overflow-hidden mb-2">
+                                        <img class="img-fluid w-100" src="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/uni/Improving Deep Neural Networks  Hyperparameter Tuning, Regularization and Optimization.jpg" alt="">
+                                        <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                                            <a href="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/uni/Improving Deep Neural Networks  Hyperparameter Tuning, Regularization and Optimization.jpg" data-lightbox="portfolio">
+                                                <i class="fa fa-4x fa-plus text-white"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+ <!-- END ONE LINE-->
+                                <div class="col-md-6 mb-4 portfolio-item first">
+                                        <div class="position-relative overflow-hidden mb-2">
+                                            <img class="img-fluid w-100" src="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/chil/IMG_20221214_103343.jpg" alt="">
+                                            <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                                                <a href="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/chil/IMG_20221214_103343.jpg" data-lightbox="portfolio">
+                                                    <i class="fa fa-4x fa-plus text-white"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                </div>
+    
+
+                                <div class="col-md-6 mb-4 portfolio-item second">
+                                    <div class="position-relative overflow-hidden mb-2">
+                                        <img class="img-fluid w-100" src="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/uni/Neural Networks and Deep Learning.jpg" alt="">
+                                        <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                                            <a href="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/uni/Neural Networks and Deep Learning.jpg" data-lightbox="portfolio">
+                                                <i class="fa fa-4x fa-plus text-white"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+ <!-- END ONE LINE-->
+                                <div class="col-md-6 mb-4 portfolio-item first">
+                                        <div class="position-relative overflow-hidden mb-2">
+                                            <img class="img-fluid w-100" src="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/chil/IMG_20221214_103347.jpg" alt="">
+                                            <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                                                <a href="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/chil/IMG_20221214_103347.jpg" data-lightbox="portfolio">
+                                                    <i class="fa fa-4x fa-plus text-white"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                </div>
+    
+
+                                <div class="col-md-6 mb-4 portfolio-item second">
+                                    <div class="position-relative overflow-hidden mb-2">
+                                        <img class="img-fluid w-100" src="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/uni/original_7ed43926-20fc-4cb3-b0d3-e3f3d4a6eba6_IMG_20230401_231532.jpg" alt="">
+                                        <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                                            <a href="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/uni/original_7ed43926-20fc-4cb3-b0d3-e3f3d4a6eba6_IMG_20230401_231532.jpg" data-lightbox="portfolio">
+                                                <i class="fa fa-4x fa-plus text-white"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+ <!-- END ONE LINE-->
+                                <div class="col-md-6 mb-4 portfolio-item first">
+                                        <div class="position-relative overflow-hidden mb-2">
+                                            <img class="img-fluid w-100" src="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/chil/IMG_20221214_103427_hdr.jpg" alt="">
+                                            <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                                                <a href="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/chil/IMG_20221214_103427_hdr.jpg" data-lightbox="portfolio">
+                                                    <i class="fa fa-4x fa-plus text-white"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                </div>
+    
+
+                                <div class="col-md-6 mb-4 portfolio-item second">
+                                    <div class="position-relative overflow-hidden mb-2">
+                                        <img class="img-fluid w-100" src="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/uni/SE160972_28082023144722_page-0001.jpg" alt="">
+                                        <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                                            <a href="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/uni/SE160972_28082023144722_page-0001.jpg" data-lightbox="portfolio">
+                                                <i class="fa fa-4x fa-plus text-white"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+ <!-- END ONE LINE-->
+                                <div class="col-md-6 mb-4 portfolio-item first">
+                                        <div class="position-relative overflow-hidden mb-2">
+                                            <img class="img-fluid w-100" src="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/chil/IMG_20221214_103431.jpg" alt="">
+                                            <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                                                <a href="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/chil/IMG_20221214_103431.jpg" data-lightbox="portfolio">
+                                                    <i class="fa fa-4x fa-plus text-white"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                </div>
+    
+
+                                <div class="col-md-6 mb-4 portfolio-item second">
+                                    <div class="position-relative overflow-hidden mb-2">
+                                        <img class="img-fluid w-100" src="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/uni/Sequence Models.jpg" alt="">
+                                        <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                                            <a href="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/uni/Sequence Models.jpg" data-lightbox="portfolio">
+                                                <i class="fa fa-4x fa-plus text-white"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+ <!-- END ONE LINE-->
+                                <div class="col-md-6 mb-4 portfolio-item first">
+                                        <div class="position-relative overflow-hidden mb-2">
+                                            <img class="img-fluid w-100" src="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/chil/IMG_20221214_103434.jpg" alt="">
+                                            <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                                                <a href="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/chil/IMG_20221214_103434.jpg" data-lightbox="portfolio">
+                                                    <i class="fa fa-4x fa-plus text-white"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                </div>
+    
+
+                                <div class="col-md-6 mb-4 portfolio-item second">
+                                    <div class="position-relative overflow-hidden mb-2">
+                                        <img class="img-fluid w-100" src="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/uni/Structuring Machine Learning Projects.jpg" alt="">
+                                        <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                                            <a href="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/uni/Structuring Machine Learning Projects.jpg" data-lightbox="portfolio">
+                                                <i class="fa fa-4x fa-plus text-white"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+ <!-- END ONE LINE-->
+                                <div class="col-md-6 mb-4 portfolio-item first">
+                                        <div class="position-relative overflow-hidden mb-2">
+                                            <img class="img-fluid w-100" src="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/chil/IMG_20221214_103449.jpg" alt="">
+                                            <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                                                <a href="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/chil/IMG_20221214_103449.jpg" data-lightbox="portfolio">
+                                                    <i class="fa fa-4x fa-plus text-white"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                </div>
+    
+
+                                <div class="col-md-6 mb-4 portfolio-item second">
+                                    <div class="position-relative overflow-hidden mb-2">
+                                        <img class="img-fluid w-100" src="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/uni/Tensorflow  Analyse de Sentiments avec Word.jpg" alt="">
+                                        <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                                            <a href="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/uni/Tensorflow  Analyse de Sentiments avec Word.jpg" data-lightbox="portfolio">
+                                                <i class="fa fa-4x fa-plus text-white"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+ <!-- END ONE LINE-->
+                                <div class="col-md-6 mb-4 portfolio-item first">
+                                        <div class="position-relative overflow-hidden mb-2">
+                                            <img class="img-fluid w-100" src="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/chil/IMG_20221214_103453.jpg" alt="">
+                                            <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                                                <a href="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/chil/IMG_20221214_103453.jpg" data-lightbox="portfolio">
+                                                    <i class="fa fa-4x fa-plus text-white"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                </div>
+    
+
+                                <div class="col-md-6 mb-4 portfolio-item second">
+                                    <div class="position-relative overflow-hidden mb-2">
+                                        <img class="img-fluid w-100" src="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/uni/TensorFlow for CNNs  Learn and Practice CNNs.jpg" alt="">
+                                        <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                                            <a href="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/uni/TensorFlow for CNNs  Learn and Practice CNNs.jpg" data-lightbox="portfolio">
+                                                <i class="fa fa-4x fa-plus text-white"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+ <!-- END ONE LINE-->
+                                <div class="col-md-6 mb-4 portfolio-item first">
+                                        <div class="position-relative overflow-hidden mb-2">
+                                            <img class="img-fluid w-100" src="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/chil/IMG_20221214_103507.jpg" alt="">
+                                            <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                                                <a href="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/chil/IMG_20221214_103507.jpg" data-lightbox="portfolio">
+                                                    <i class="fa fa-4x fa-plus text-white"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                </div>
+    
+ <!-- END ONE LINE--> 
+                                <div class="col-md-6 mb-4 portfolio-item first">
+                                        <div class="position-relative overflow-hidden mb-2">
+                                            <img class="img-fluid w-100" src="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/chil/IMG_20221214_103651_hdr.jpg" alt="">
+                                            <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                                                <a href="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/chil/IMG_20221214_103651_hdr.jpg" data-lightbox="portfolio">
+                                                    <i class="fa fa-4x fa-plus text-white"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                </div>
+    
+ <!-- END ONE LINE--> 
+                                <div class="col-md-6 mb-4 portfolio-item first">
+                                        <div class="position-relative overflow-hidden mb-2">
+                                            <img class="img-fluid w-100" src="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/chil/IMG_20221214_103700_hdr.jpg" alt="">
+                                            <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                                                <a href="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/chil/IMG_20221214_103700_hdr.jpg" data-lightbox="portfolio">
+                                                    <i class="fa fa-4x fa-plus text-white"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                </div>
+    
+ <!-- END ONE LINE--> 
+                                <div class="col-md-6 mb-4 portfolio-item first">
+                                        <div class="position-relative overflow-hidden mb-2">
+                                            <img class="img-fluid w-100" src="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/chil/IMG_20221214_103712.jpg" alt="">
+                                            <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                                                <a href="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/chil/IMG_20221214_103712.jpg" data-lightbox="portfolio">
+                                                    <i class="fa fa-4x fa-plus text-white"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                </div>
+    
+ <!-- END ONE LINE--> 
+                                <div class="col-md-6 mb-4 portfolio-item first">
+                                        <div class="position-relative overflow-hidden mb-2">
+                                            <img class="img-fluid w-100" src="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/chil/IMG_20221214_103734.jpg" alt="">
+                                            <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                                                <a href="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/chil/IMG_20221214_103734.jpg" data-lightbox="portfolio">
+                                                    <i class="fa fa-4x fa-plus text-white"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                </div>
+    
+ <!-- END ONE LINE--> 
+                                <div class="col-md-6 mb-4 portfolio-item first">
+                                        <div class="position-relative overflow-hidden mb-2">
+                                            <img class="img-fluid w-100" src="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/chil/IMG_20221214_103749.jpg" alt="">
+                                            <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                                                <a href="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/chil/IMG_20221214_103749.jpg" data-lightbox="portfolio">
+                                                    <i class="fa fa-4x fa-plus text-white"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                </div>
+    
+ <!-- END ONE LINE--> 
+                                <div class="col-md-6 mb-4 portfolio-item first">
+                                        <div class="position-relative overflow-hidden mb-2">
+                                            <img class="img-fluid w-100" src="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/chil/IMG_20221214_103755.jpg" alt="">
+                                            <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                                                <a href="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/chil/IMG_20221214_103755.jpg" data-lightbox="portfolio">
+                                                    <i class="fa fa-4x fa-plus text-white"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                </div>
+    
+ <!-- END ONE LINE--> 
+                                <div class="col-md-6 mb-4 portfolio-item first">
+                                        <div class="position-relative overflow-hidden mb-2">
+                                            <img class="img-fluid w-100" src="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/chil/IMG_20221214_103758.jpg" alt="">
+                                            <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                                                <a href="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/chil/IMG_20221214_103758.jpg" data-lightbox="portfolio">
+                                                    <i class="fa fa-4x fa-plus text-white"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                </div>
+    
+ <!-- END ONE LINE--> 
+                                <div class="col-md-6 mb-4 portfolio-item first">
+                                        <div class="position-relative overflow-hidden mb-2">
+                                            <img class="img-fluid w-100" src="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/chil/IMG_20221214_103800.jpg" alt="">
+                                            <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                                                <a href="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/chil/IMG_20221214_103800.jpg" data-lightbox="portfolio">
+                                                    <i class="fa fa-4x fa-plus text-white"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                </div>
+    
+ <!-- END ONE LINE--> 
+                                <div class="col-md-6 mb-4 portfolio-item first">
+                                        <div class="position-relative overflow-hidden mb-2">
+                                            <img class="img-fluid w-100" src="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/chil/IMG_20221214_103803.jpg" alt="">
+                                            <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                                                <a href="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/chil/IMG_20221214_103803.jpg" data-lightbox="portfolio">
+                                                    <i class="fa fa-4x fa-plus text-white"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                </div>
+    
+ <!-- END ONE LINE--> 
+                                <div class="col-md-6 mb-4 portfolio-item first">
+                                        <div class="position-relative overflow-hidden mb-2">
+                                            <img class="img-fluid w-100" src="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/chil/IMG_20221214_103806.jpg" alt="">
+                                            <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                                                <a href="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/chil/IMG_20221214_103806.jpg" data-lightbox="portfolio">
+                                                    <i class="fa fa-4x fa-plus text-white"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                </div>
+    
+ <!-- END ONE LINE--> 
+                                <div class="col-md-6 mb-4 portfolio-item first">
+                                        <div class="position-relative overflow-hidden mb-2">
+                                            <img class="img-fluid w-100" src="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/chil/IMG_20221214_103810.jpg" alt="">
+                                            <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                                                <a href="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/chil/IMG_20221214_103810.jpg" data-lightbox="portfolio">
+                                                    <i class="fa fa-4x fa-plus text-white"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                </div>
+    
+ <!-- END ONE LINE--> 
+                                <div class="col-md-6 mb-4 portfolio-item first">
+                                        <div class="position-relative overflow-hidden mb-2">
+                                            <img class="img-fluid w-100" src="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/chil/IMG_20221214_104311_hdr.jpg" alt="">
+                                            <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                                                <a href="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/chil/IMG_20221214_104311_hdr.jpg" data-lightbox="portfolio">
+                                                    <i class="fa fa-4x fa-plus text-white"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                </div>
+    
+ <!-- END ONE LINE--> 
+                                <div class="col-md-6 mb-4 portfolio-item first">
+                                        <div class="position-relative overflow-hidden mb-2">
+                                            <img class="img-fluid w-100" src="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/chil/IMG_20221214_104349.jpg" alt="">
+                                            <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                                                <a href="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/chil/IMG_20221214_104349.jpg" data-lightbox="portfolio">
+                                                    <i class="fa fa-4x fa-plus text-white"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                </div>
+    
+ <!-- END ONE LINE--> 
+                                <div class="col-md-6 mb-4 portfolio-item first">
+                                        <div class="position-relative overflow-hidden mb-2">
+                                            <img class="img-fluid w-100" src="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/chil/IMG_20221214_104355.jpg" alt="">
+                                            <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                                                <a href="../../../static/styles/me/cv/img/Cers of Tran Xuan Thanh/chil/IMG_20221214_104355.jpg" data-lightbox="portfolio">
+                                                    <i class="fa fa-4x fa-plus text-white"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                </div>
+    
+ <!-- END ONE LINE--> 
